@@ -138,6 +138,18 @@ options:
   --locale {ru,en}      Выберите язык интерфейса: ru (русский) или en (английский).
 ```
 
+# Конфиг программы
+```
+[Settings]
+chat_text = text
+bind_key = F8
+delay = 1
+language = ru
+bind_exec_key = F9
+
+[History]
+texts = text1;text2
+```
 
 # Компиляция
 ```
