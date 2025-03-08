@@ -1,0 +1,9 @@
+pyinstaller
+configparser
+psutil
+keyboard
+pywinstyles
+pyqt5
+pyqt-darktheme
+datetime
+argparse
