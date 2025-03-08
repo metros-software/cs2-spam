@@ -139,3 +139,8 @@ options:
 ```
 
 
+# Компиляция
+```
+pyinstaller -y -w -F --icon=app.ico app.py
+```
+ 
