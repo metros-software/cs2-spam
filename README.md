@@ -33,6 +33,13 @@
 Программа имитирует нажатие клавиши (по умолчанию `F8`), что приводит к отправке сообщения в чат.<br>
 Цикл повторяется с заданной задержкой и количеством итераций.<br>
 
+# Установка
+Скачать программу <a href="https://github.com/metros-software/spam-chat-cs2/releases/download/cs2/app.exe">здесь</a>.<br> 
+Релиз <a href="https://github.com/metros-software/spam-chat-cs2/releases/tag/cs2">здесь</a>.
+
+<a href="https://github.com/metros-software/spam-chat-cs2/releases/tag/cs2">![image](https://github.com/user-attachments/assets/e7e4f826-2896-4d54-a0f5-9f7c08335863)</a>
+ 
+
 
 # Использование
 ## Первое использование
