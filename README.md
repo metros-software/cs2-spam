@@ -162,4 +162,7 @@ texts = text1;text2
 ```
 pyinstaller -y -w -F --icon=app.ico app.py
 ```
- 
+или
+```bash
+./setup.bat
+```
