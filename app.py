@@ -17,7 +17,7 @@ from darktheme.widget_template import DarkPalette
 from datetime import datetime
  
 
-__version__ = "1.6 [08.03.2025]"
+__version__ = "1.7 [25.03.2025]"
 
 TEXTS = {
     "ru": {
@@ -398,7 +398,7 @@ class MainWindow(QMainWindow):
     def update_command(self):
         chat_text = self.chat_text_combo.currentText()
         bind_key = self.bind_key_input.text()
-        chat_command = self.chat_command_combo.currentText().split(" ")[0] if " " in self.chat_command_combo.currentText() else self.chat_command_combo.currentText()
+        chat_command = "say" if self.chat_command_combo.currentText() == TEXTS[self.language]["say_all"] else "say_team"
         text_command = f'bind "{bind_key}" "{chat_command} {chat_text}"'
         self.text_command_input.setText(text_command)
 
@@ -652,6 +652,7 @@ def open_main_window():
     if app is None:
         app = QApplication(sys.argv)
     app.setStyle('Fusion')
+    
     if theme:
         app.setPalette(DarkPalette())
         window = MainWindow()
@@ -666,6 +667,5 @@ def open_main_window():
 
 if __name__ == '__main__':
     check_cs2_process()
-
 
 
