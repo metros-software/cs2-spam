@@ -583,6 +583,8 @@ class MainWindow(QMainWindow):
             self.update_command()
 
 def check_cs2_process():
+    sys_locale = locale.getlocale()[0] or "en_US"
+    LANGUAGE = "ru" if "ru" in sys_locale.lower() else "en"
     if find_cs2_exe_path() is None:
         app = QApplication.instance()
         if app is None:
